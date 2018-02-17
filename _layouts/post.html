@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="postWrapper">
   <section class="section--first is-darkBackgrounded u-table">
     <div class="section-backgroundImage">
@@ -10,7 +11,7 @@ layout: default
         {% if page.image.topPosition %}
           top:{{ page.image.topPosition }};
         {% endif %}
-        " alt="">
+        " alt="{{ page.title }}">
       {% endif %}
 
     </div>
@@ -23,7 +24,7 @@ layout: default
     "></div>
     <div class="section-title is-darkBackgrounded u-tableCell u-verticalAlignMiddle">
       <div class="container">
-        <h2>{{ page.title }}</h2>
+        <h1>{{ page.title }}</h1>
         <div class="postMeta-wrapper">
           <ul class="postMeta">
             <li class="postMeta-datetime">
@@ -31,11 +32,15 @@ layout: default
                 {{ page.date | date_to_string }}
               </time>
             </li>
+            <li class="postMeta-tags">
+              {% assign categories = page.categories %}
+              {% for category in categories %}
+              <a href="{{site.url}}/categories/{{category}}">{{category}}</a>
+              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            </li>
             <li class="postMeta-author">
               By {{ site.author.name }}
-            </li>
-            <li class="postMeta-tags">
-              {{ page.categories }}
             </li>
           </ul>
         </div>
@@ -55,8 +60,9 @@ layout: default
     <hr/>
     <div class="container container--content">
       <div class="content-body">
-        {% include subscribe.html %}
         {% include comments.html %}
+        {% include subscribe.html %}
+		{% include footer.html %}
       </div>
     </div>
   </section>
@@ -68,7 +74,7 @@ layout: default
           {% if page.previous.image.feature %}
             src="{{ page.previous.image.feature | prepend: site.baseurl_featured_img }}"
           {% endif %}
-          style="top:0" alt="">
+          style="top:0" alt="{{ page.previous.title }}">
         </div>
         <div class="section-gradient
         {% if page.previous.bgGradientOpacity == "darker" %}

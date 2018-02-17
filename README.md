@@ -1,12 +1,11 @@
-# Mickey
+# Mickey Plus
 
-Mickey is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
+Mickey Plus is a minimal one-column, responsive theme for [Jekyll](http://jekyllrb.com).
 
-It's inspired by [Hyde](http://hyde.getpoole.com), [Medium](http://medium.com), and [Squarespace](http://squarespace.com).
+It's inspired by [Mikey original template](http://vincentchan.github.io/mickey), [Hyde](http://hyde.getpoole.com), 
+[Medium](http://medium.com), and [Squarespace](http://squarespace.com).
 
 ![Mickey screenshots](/assets/images/demo.png)
-
-See Mickey in action with [the demo site](http://vincentchan.github.io/mickey) or [my personal blog](http://aneverendingdream.com).
 
 ## Contents
 
@@ -22,7 +21,7 @@ See Mickey in action with [the demo site](http://vincentchan.github.io/mickey) o
 
 ## Installation
 
-Mickey requires [Jekyll](http://jekyllrb.com/) 2.x. and [Gulp](http://gulpjs.com/) for workflow automation.
+Mickey Plus requires [Jekyll](http://jekyllrb.com/) 2.x. and [Gulp](http://gulpjs.com/) for workflow automation.
 
 Make sure to run `gem update jekyll` if you aren’t on the latest version or `gem install jekyll` if this is your first time installing it.
 
@@ -106,18 +105,18 @@ You can reference `_scss/_images.scss` for details.
 
 ## Development
 
-Mickey has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be submitted against `master`.**
-- `gh-pages` for our hosted landing page. **Please avoid using this branch.**
-
 During development, simply run `gulp` in terminal and it will compile the jekyll site, compile Sass, create post thumbnails, launch BrowserSync & watch files for changes and recompile.
 
 Source Sass files are located in `_scss/`, included into `main.scss`, and compile to `assets/css/main.css`.
 
 Post thumbnails are automatically resized via Gulp's image resize package, and moved to `assets/images/thumbnails`. Any featured images you put in `assets/images/hero` will be automatically created
 
-## Author
+## Authors
+
+
+**Ugo Raffaele Piemontese**
+- <http://www.ugopiemontese.eu>
+- <https://github.com/UgoRaffaele>
 
 **Vincent Chan**
 - <https://github.com/vincentchan>

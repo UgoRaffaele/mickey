@@ -67,7 +67,7 @@
 }
 
 .sidebar-toggle-wrapper {
-  position: fixed;
+  position: absolute;
   z-index: $zIndex-5--sidebar-toggle-wrapper;
   top: 30px;
   right: 3%;
@@ -83,6 +83,10 @@
 
 .sidebar-toggle-wrapper:hover .sidebar-toggle {
   background-color: #666;
+}
+
+.sidebar-toggle-wrapper--black {
+  background-color: $black;
 }
 
 // Sidebar toggle
@@ -142,9 +146,9 @@
   }
 }
 
-/* .sidebar-toggle--black {
-  background: $black;
-} */
+.sidebar-toggle--black {
+  background-color: $white;
+}
 
 // sidebar toggle behavior
 
@@ -156,7 +160,6 @@
   transform: translateX(-14rem);
 }
 
-.sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle-wrapper {
   position: fixed;
   background-color: rgba($black,0.8);

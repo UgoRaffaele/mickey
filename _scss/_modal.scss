@@ -37,7 +37,7 @@
   position: fixed;
   display: block;
   bottom: 30px;
-	right: 3%;
+  right: 3%;
   opacity: 0;
   visibility: hidden;
   transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -59,12 +59,12 @@
 .modal-toggle-bubble,
 .modal-toggle-bubbleShadow {
   height: 44px;
-	width: 44px;
+  width: 44px;
   border-radius: 50%;
 }
 
 .modal-toggle-wrapper {
-	position: absolute;
+  position: absolute;
   top: 0;
   display: block;
   background-image: url(../images/heart.svg);
@@ -72,9 +72,9 @@
   background-position: center center;
   background-size: 60%;
   background-color: transparent;
-	cursor: pointer;
-	-webkit-transform: scale(1);
-	-webkit-transition: all 0.3s ease-out;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  -webkit-transition: all 0.3s ease-out;
   z-index: $zIndex-7--modal-toggle-wrapper;
 }
 
@@ -185,30 +185,30 @@
   position: absolute;
   top: 0;
   background-color: rgba($black,.9);
-	-webkit-transform: scale(1);
-	-webkit-transition: all 0.3s ease-out;
+  -webkit-transform: scale(1);
+  -webkit-transition: all 0.3s ease-out;
   z-index: $zIndex-6--modal-toggle-bubble;
 }
 
 .modal-toggle-bubble.active {
-	-webkit-transform: scale(100);
-	-webkit-transition: all 0.6s ease-out;
-	-webkit-transition-delay: .4s;
+  -webkit-transform: scale(125);
+  -webkit-transition: all 0.6s ease-out;
+  -webkit-transition-delay: .4s;
 }
 
 .modal-toggle-bubbleShadow {
   position: absolute;
   top: 0;
   background-color: $black;
-	-webkit-transform: scale(1);
-	opacity: 1;
+  -webkit-transform: scale(1);
+  opacity: 1;
   z-index: $zIndex-5--modal-toggle-bubbleshadow;
 }
 
 .modal-toggle-bubbleShadow.active {
-	-webkit-transform: scale(1.5);
-	opacity: 0;
-	-webkit-transition: all 0.3s ease-out;
+  -webkit-transform: scale(1.5);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
 }
 
 // share buttons
@@ -229,7 +229,7 @@
     float: left;
     margin: 0;
     padding: 0 15px;
-    width: 16.66%;
+    width: 33.33%;
     height: 80px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -241,7 +241,7 @@
     }
 
     @media (min-width: $screen-sm-max) and (max-width: $screen-lg-min) {
-      width: 16.66%;
+      width: 33.33%;
       height: 60px;
     }
 
@@ -254,26 +254,14 @@
   }
 }
 
-.shareButton--twitter {
-  background-image: url(../images/twitter.svg);
-}
-
 .shareButton--facebook {
   background-image: url(../images/facebook.svg);
 }
 
-.shareButton--linkedin {
-  background-image: url(../images/linkedin.svg);
+.shareButton--twitter {
+  background-image: url(../images/twitter.svg);
 }
 
-.shareButton--buffer {
-  background-image: url(../images/buffer.svg);
-}
-
-.shareButton--hackernews {
-  background-image: url(../images/ycombinator.svg);
-}
-
-.shareButton--pocket {
-  background-image: url(../images/pocket.svg);
+.shareButton--whatsapp {
+  background-image: url(../images/whatsapp.svg);
 }

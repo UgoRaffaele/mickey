@@ -4,12 +4,17 @@
  / /  / // // /___/ /| |/ /___    / /
 /_/  /_/___/\____/_/ |_/_____/   /_/
 
-The humans.txt file explains the technology, and graphic assets
-behind this site.
+The humans.txt file explains the technology and graphic assets behind this site
 
 _______________________________________________________________________________
 
 PEOPLE
+
+This Jekyll theme was modified by:
+
+UgoRaffaele
+Interaction design, visual design, web development
+http://www.ugopiemontese.eu
 
 This Jekyll theme was hand-crafted by:
 
